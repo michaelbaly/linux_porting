@@ -154,7 +154,7 @@ sudo systemctl restart rpcbind
    d. Confirm from a Linux client
 
    ```
-   # add rule to ufw
+   # Add rule to ufw
    sudo ufw allow 2049/udp
    sudo ufw allow 111/udp
    sudo ufw allow 20048/udp
@@ -166,3 +166,9 @@ sudo systemctl restart rpcbind
    ls /mnt        # Should succeed over UDP
 
    ```
+
+---
+
+| kernel |busybox |host |target cpu|
+|:------ |:-------|:----|:---------|
+| *2.6.29*     |*1.20.2*  |*Ubuntu22.04*| *s3c6410*|
